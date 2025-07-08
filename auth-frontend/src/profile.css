@@ -1,0 +1,94 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc,#6a11cb,#2575fc); /* Gradient background */
+    color: white; /* Text color */
+    min-height: 100vh; /* Full height */
+    opacity: 0; /* Start with hidden */
+    animation: fadeInScale 0.8s forwards; /* Combined fade-in and scale animation */
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0; /* Start transparent */
+        transform: translateY(20px) scale(0.8); /* Move down and scale down */
+    }
+    50% {
+        opacity: 0.5; /* Midway transparent */
+        transform: translateY(10px) scale(1.05); /* Slightly up and scale up */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0) scale(1); /* Move back to original position */
+    }
+}
+
+h2 {
+    font-size: 2em; /* Larger font for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.profile-info {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px); /* Start below */
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        transform: translateY(0); /* Move to original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.profile-info p {
+    font-size: 1.2em; /* Slightly larger text for profile details */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+button {
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 20px; /* Space above the button */
+    animation: popIn 0.3s forwards; /* Pop-in animation for button */
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0); /* Start scaled down */
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        transform: scale(1); /* Scale to original size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.title{
+    color:#d5cedd
+}
+
+.a{
+    color: #6a11cb;
+}

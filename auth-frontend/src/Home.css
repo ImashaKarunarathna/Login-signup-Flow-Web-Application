@@ -1,0 +1,77 @@
+/* Home container setup */
+.home-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Video background */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(190, 221, 235);
+    font-size: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* Button styling */
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d0233;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #12298d;
+}
+
+/* Responsive typography */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

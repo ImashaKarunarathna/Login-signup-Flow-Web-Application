@@ -1,0 +1,55 @@
+/* Login.css */
+
+/* General styling for the login container with a gradient background */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Change text color to white for contrast */
+}
+
+/* Heading styling */
+h2 {
+    color: #f8560b; /* White color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Input field styling */
+input {
+    width: 300px; /* Fixed width */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-shadow: 0 2px 5px rgba(28, 3, 116, 0.2); /* Shadow for depth */
+}
+
+/* Button styling */
+button {
+    width: 320px; /* Fixed width */
+    padding: 10px; /* Padding for the button */
+    margin-top: 10px; /* Space above the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #021830; /* Blue background */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Message styling */
+p {
+    margin-top: 10px; /* Space above the message */
+    color: #d9534f; /* Red color for error/success messages */
+    font-size: 16px; /* Font size */
+}
